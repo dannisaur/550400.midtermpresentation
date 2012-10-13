@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.20pt}
+\beamer@sectionintoc {1}{Preliminaries}{3}{0}{1}
+\beamer@sectionintoc {2}{Principles}{5}{0}{2}
+\beamer@sectionintoc {3}{Tools}{6}{0}{3}
+\beamer@sectionintoc {4}{Arguments from Scale}{7}{0}{4}
+\beamer@sectionintoc {5}{Graphical Methods}{8}{0}{5}
+\beamer@sectionintoc {6}{Basic Optimization}{9}{0}{6}
