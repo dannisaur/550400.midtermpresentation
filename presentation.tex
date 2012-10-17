@@ -99,22 +99,67 @@ Danni Tang \\
     \frametitle{Relevance}
     Problem area:
     \vspace{7pt}
-             \begin{itemize}
-                 \item 
-             \end{itemize}
+     \begin{itemize}
+	\item D.C. and Baltimore have similar worker populations
+\begin{table}[ht]
+\caption{Workers Who Use Public Transportation}   % title of Table
+\centering % used for centering table
+\begin{tabular}{c c c} % centered columns (3 columns)
+\hline\hline %inserts double horizontal lines
+City & \# of workers & \# of cars, trucks, or vans \\ [0.5ex]
+\hline  % inserts single horizontal line
+Washington, D.C. & 293,532 & 127,494 \\% inserting body of the table
+Baltimore & 269,917 & 186,961 \\ [1ex] % [1ex] adds vertical space
+\hline %inserts single line
+\end{tabular}
+\label{table:workers} % is used to refer this table in the text
+\end{table}
+	\item 43\% of D.C. workers commute in cars, trucks, or vans
+	\item 69\% of Baltimore workers commute in cars, trucks, or vans
+	\item it is apparent that large populations of workers of both cities rely on vehicles to commute
+	\item a subway line between the two cities would greatly reduce traffic volume, jams, and accidents
+	\item sponsors would find this model relevant
+     \end{itemize}
 \end{frame}
 
 \begin{frame}
     \frametitle{Problem Statement}
+    \begin{itemize}
+        \item WMATA has no plans to expand the Metrorail system to the city and suburbs surrounding Baltimore
+	\item MTA Maryland's Metro Subway system only operates within city limits
+	\item residents of Greater Washington-Baltimore Metropolitan area have limited access to public transportation to travel between the two cities
+	\item current public transportation methods:
+	\begin{itemize}
+		\item AMTRAK fares too expensive for daily commute
+		\item MARC operates rush hours on weekdays
+	\end{itemize}
+	\item both sponsors operate under two separate government agencies
+	\item our task is to provide a model that can predict the operating capacity for a such a line based on published transportation statistics
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Deliverables: From Sponsor to Team}
     \begin{enumerate}
-        \item
+        \item most recent data and statistics from Maryland Department of Transportation by Oct 19, 2012
+	\begin{itemize}
+		\item contingency plan: if data not received by the assigned time, we will obtain data published on the Department of Transportation website
+	\end{itemize}
+	\item computing resources
+	\item timely responses to inquiries
+	\item small expenses relevant to work
     \end{enumerate}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Deliverables}
+    \frametitle{Deliverables: From Team to Sponsor}
     \begin{enumerate}
-        \item
+        \item mathematical model of traffic flow at various hours of the day (morning, noon, evening)
+	\item traffic flow will model highways I-495 and I-95
+	\item analytical report on the results of traffic flow model to determine if a subway line is viable
+	\item time permitting, design of the subway line
+	\item R package with documentations and codes to reproduce test results
+	\item technical report and presentation summarizing the work done
     \end{enumerate}
 \end{frame}
 
@@ -153,4 +198,10 @@ Danni Tang \\
     \frametitle{Example: Maintaining Inventory}
 \end{frame}
 
+\begin{frame}
+\bibliographystyle{plain}
+%%\renewcommand\bibname{Selected Bibliography Including Cited Works}
+\nocite{*}
+\bibliography{biblio}{}
+\end{frame}
 \end{document}
