@@ -201,38 +201,79 @@ Baltimore & 269,917 & 186,961 \\ [1ex] % [1ex] adds vertical space
 
 \section{Traffic Flow Models}
 \begin{frame}
-    \frametitle{M. Bando Model}
+    \frametitle{M. Bando Model of Optimal Velocity}
      \begin{enumerate}
-	\item 
+	\item assumptions:
+		\begin{itemize}
+			\item Newtonian law of acceleration
+			\item a car will drive at maximum speed with enough distance from the car in front
+			\item a car will maintain optimal velocity depending on distance from the car in front
+		\end{itemize}
+	\item governing equations:
+	\[
+	\frac{dx_i}{dt} = v_i
+	\]
+	\[
+	\frac{dx_i}{dt} = a[V(x_{i+1} - x_i) - v_i]
+	\]
+	\[
+	V(b) = tanh(b-2) + tanh(2)
+	\]
+	\item initialls, cars are uniform; traffic jam occurs when the model becomes unstable
      \end{enumerate}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Payne-Whitham and Aw-Rascle Models}
+    \frametitle{Payne-Whitham Model}
      \begin{enumerate}
-	\item 
+	\item assumptions
+	\begin{itemize}
+		\item single lane, straight roads
+		\item drivers behave predictably and obey all traffic laws
+	\end{itemize}
+	\item governing system of equations:
+	\[
+	\rho_t + (\rho*v_*(\rho))_x = 0 
+	\]
+	\[
+	v_t + vv_x + \frac{{c_0}^2}{\rho}\rho_x = \frac{v_*(\rho) - v}{\tau}
+	\]
+	\item at low traffic density, traffic flow is nice and uniform
+	\item at high traffic density, flow becomes unstable when perturbations grow; instabilities become traveling waves called jamitons
      \end{enumerate}
 \end{frame}
 
 \begin{frame}
     \frametitle{Implementation of Traffic Flow Models}
      \begin{enumerate}
-	\item 
+	\item both models of traffic flow will be simulated in MATLAB
+	\item models will incorporate parameters from transportation data and statistics, such as number of cars traveling at certain times of day, average speed of cars, etc
+	\item after simulating and comparing the two models, we will determine one model to realistically represent the highway traffic flow between D.C. and Baltimore
+	\item using the chosen traffic model, we will determine if a rapid transit line is viable
+     \end{enumerate}
+\end{frame}
+
+\section{Results}
+
+\begin{frame}
+    \frametitle{Report and Presentation}
+     \begin{enumerate}
+	\item analytical report on the results of traffic flow model simulations, such as accuracy of the model, the effect of changing model parameters on the model, etc
+	\item determine viability of building a rapid transit line
+	\item compose an R package with documentation and codes to reproduce results
+	\item prepare a final report (paper and beamer presentation)
      \end{enumerate}
 \end{frame}
 
 \begin{frame}
     \frametitle{Design of Subway Line (Time Permitting)}
      \begin{enumerate}
-	\item 
-     \end{enumerate}
-\end{frame}
-
-\section{Results}
-\begin{frame}
-    \frametitle{Report and Presentation}
-     \begin{enumerate}
-	\item 
+	\item based on results from traffic flow simulation, decide if a rapid transit line is viable based on parameters such as number of commuters, reduction in frequency of traffic jams and accidents, and financial feasibility
+	\item research the cost and logistics of building a line
+	\item set fare prices for all stops (include a flat price)
+	\item determine the locations of subway stops (places of highest traffic volume)
+	\item number of subway stops will depend on optimal distances between stops
+	\item predict the operating capacity of the subway transit line between D.C. and Baltimore
      \end{enumerate}
 \end{frame}
 
