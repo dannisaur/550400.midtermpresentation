@@ -1,7 +1,8 @@
 \beamer@endinputifotherversion {3.20pt}
-\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{Principles}{9}{0}{2}
-\beamer@sectionintoc {3}{Tools}{10}{0}{3}
-\beamer@sectionintoc {4}{Arguments from Scale}{11}{0}{4}
-\beamer@sectionintoc {5}{Graphical Methods}{12}{0}{5}
-\beamer@sectionintoc {6}{Basic Optimization}{13}{0}{6}
+\beamer@sectionintoc {1}{Sponsors and Relevance}{3}{0}{1}
+\beamer@sectionintoc {2}{Problem Statement}{6}{0}{2}
+\beamer@sectionintoc {3}{Approach}{9}{0}{3}
+\beamer@sectionintoc {4}{Tools}{10}{0}{4}
+\beamer@sectionintoc {5}{Arguments from Scale}{11}{0}{5}
+\beamer@sectionintoc {6}{Graphical Methods}{12}{0}{6}
+\beamer@sectionintoc {7}{Basic Optimization}{13}{0}{7}
